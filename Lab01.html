@@ -1,17 +1,22 @@
 <html>
+
+<link rel="stylesheet" href="CSS/main.css">
+
     <head>
         <title>Laboratorio 1</title>
+
+        <header><h1 class="fondo_azul">Laboratorio 1</h1></header>
     </head>
 
     <BODy>
         <ul>
-                <li>¿Cuál es la diferencia entre Internet y la World Wide Web?</li>
+                <li id="pregunta">¿Cuál es la diferencia entre Internet y la World Wide Web?</li>
                 <body>
                     <br>
                    El internet es la red de computadoras conectadas que utilizas para acceder a la world
                    wide web. La web son las paginas que ves gracias al Internet.
                     <br><br>
-                <li>¿Cuáles son las partes de un URL?</li>
+                <li id="pregunta">¿Cuáles son las partes de un URL?</li>
                     <br>
                     Esquema: le dice al servidor web cual protocolo usar al acceder a la pagina.
                     <br>
@@ -34,7 +39,7 @@
                     Ej: http:://blog.emmanuel.com/ventas
                     <br><br>
 
-                <li>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</li>
+                <li id="pregunta">¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</li>
                     <br>
                     GET: se utiliza para recuperar datos.
                     <br>
@@ -50,71 +55,105 @@
                     DELETE: borra un recurso. 
                     <br><br>
                               
-                <li>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</li>
+                <li id="pregunta">¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</li>
                     <br>
                     Utilizaria el metodo POST, para mantener la seguridad del usuario. 
                     <br><br>
-                <li>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</li>
+                <li id="pregunta">¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</li>
                     <br>
                     Utiliza el metodo GET.
                     <br><br>
-                <li>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?
+                <li id="pregunta">Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error? </li>
                     <br>
                     Significa que la peticion se ha realizado con exito. 
                     <br><br>
 
-                </li>
-                <li>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</li>
+                
+                <li id="pregunta">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</li>
                     <br>
+
                     No. Si existe un eror 404, significa que el servidor no encontro el sitio pedido. Esto puede significar que 
                     la pagina ha sido borrada, o que el url es incorrecto, o que el sitio se movió. Pero todos estos
                     errores son de parte del cliente.
                     <br><br>
 
-                <li>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</li>
+                <li id="pregunta">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</li>
                     <br>
                     Si. El error esta en la parte del servidor, por lo que debe resolverse de manera interna. 
                     <br><br>
 
-                <li>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</li>
+                <li id="pregunta">¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</li>
                     <br>
                         Significa que no puede ser utilizado en el codigo. Ej:hr,div,h1,h2,colgroup,tbody
                     <br><br>
-                <li>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</li>
+                <li id="pregunta">¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</li>
                     <br>    
                         -HTML 5 soporta diferentes vectores graficos <br>
                         -Bases de datos SQL se usan para guardar informacion temporal en HTML5 <br>
                         -En HTML5, se puede correr JavaScript dentro del navegador web.
                         -HTML5 es mas simple. 
                     <br><br>
-                <li>¿Qué componentes de estructura y estilo tiene una tabla?</li>
+                <li id="pregunta">¿Qué componentes de estructura y estilo tiene una tabla?</li>
                     <br>
                     Tiene un titulo, grupos de filas, grupos de columnas. <br>
                     Cada fila consiste de una o mas celdas. <br>
                     Cada celda contiene informacion. <br><br>
 
-                <li>¿Cuáles son los principales controles de una forma HTML5?</li>
+                <li id="pregunta">¿Cuáles son los principales controles de una forma HTML5?</li>
                     <br>
                     Datalist, output,keygen, progress y meter, 
                     <br><br>
-                <li>¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</li>
+                <li id="pregunta">¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</li>
                     <br>
                     Utilizo google chrome y tiene 476 de 555 puntos. <br><br>
                     <br><br>
-                <li>Sobre el ciclo de vida y desarrollo de los sistemas de información:
+                <li id="pregunta">Sobre el ciclo de vida y desarrollo de los sistemas de información: </li>
                     <br><br>
                     ¿Cuál es el ciclo de vida de los sistemas de información?<br><br>
                     Analisis, diseño, implementacion, prueba, evaluacion. <br><br>
                     ¿Cuál es el ciclo de desarrollo de sistemas de información?<br><br>
-                    Planeacion, crear, desarrollar, prueba e implementacion. <br><br>
+                    Planeación, crear, desarrollar, prueba e implementacion. <br><br>
 
-                </li>
+                
                 </body>
 
         </ul>
 
+      
+        <h1 class="fondo_azul">Lab03</h1>
+        <ul>
+            <li id="pregunta">Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </li>
+            <br>
+            Utilizarlo solo cuando sea necesario, por ejemplo, que solo arreglas el problema que tienes con eso. O cuando sabes perfectamnte
+            que es lo que haces y que no afectará nada mas. 
+            <br><br>
+            <li id="pregunta">Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</li>
+            <br>
+            Por la resolucion de la imagen, y por consecuente, las pantallas en donde se estara viendo. Por la accesibilidad al usuario, se deben
+            considerar si es facil de leer el contenido. 
+            <br><br>
+            <li id="pregunta">Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?</li>
+            <br>
+            Creo que cada una tiene su lugar para utilizarse excepto px. Quizas solo para imagenes o bordes. 
+            En cuanto a % y pt, yo usaria el porcentage para pocisionar algo relativo a otro elemento o la pantalla, y 
+            pt para algo estatico y texto.
+            <br><br>
+            <li id="pregunta">¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</li>
+            <br>
+            Porque con su menor tamaño, es mas facil de cargar el diseño cuando se manda a traves de internet. 
+            
+        </ul>
+
     </BODy>
 
+    
 
+    <footer class="fondo_azul">
+        Emmanuel Bautista Palacios
+        <br>
+        A01705220
+        <br>
+        <section ><a target="_blank" href="https://github.com/EmBP19/A01705220_DAW"> Repositorio de laboratorios</a></section>
+    </footer>
 
 </html>
