@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="CSS/Lab06.css">
+
+<head>
+    <Title>Tienda</Title>
+
+    <header><h1 class="fondo_tienda" class="letra_blanca">Laboratorio 06 - Tienda en linea</h1></header>
+
+</head>
+
+<body class="tienda">
+    <form id="form" action="" method="GET">
+    <h1 class= "black_font">Peliculas</h1>
+    
+            <div class="primero">
+           <h2> The Godfather </h2>
+            <img src="IMG/Lab06/GodfatherMP.jpg" alt="El Padrino" width="150" height="200">
+           
+            <!-- <input type="cantidad" placeholder="Cantidad" id="elpadrino" required> -->
+            <select name="godfather" id="godfather">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+                
+            </div>
+            <div id = "T"></div>
+        
+
+            <div class="segundo">
+                <h2>La La Land</h2>
+            <img src="IMG/Lab06/LalalandMP.jpg" alt="Lalaland" width="150" height="200">
+              <!--  <input type="cantidad" placeholder="Cantidad" id="lalaland" required>-->
+              <select name="lalaland" id="lalaland">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            </div>
+    
+
+            <div class="tercero">
+            <h2>Empire Strikes Back</h2>
+            <img src="IMG/Lab06/EmpireStrikesBackMP.jpg" alt="EmpireStrikesBack" width="160" height="210">
+            
+                <!-- <input type="cantidad" placeholder="Cantidad" id="starwars" required> -->
+                <select name="starwars" id="starwars">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </div>
+        
+                
+            </div>
+            <div class = "total" id="total"></div>
+            
+           <div class="boton">
+
+
+            <button class="boton"  type="submit">Agregar</button>
+
+           </div>
+
+        </form>
+
+
+           <script src="JS/Lab06.js"></script>
+</body>
+
