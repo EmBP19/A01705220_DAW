@@ -1,0 +1,223 @@
+<html>
+
+<link rel="stylesheet" href="CSS/main.css">
+
+    <head>
+        <title>Laboratorio 1</title>
+
+        <header><h1 class="fondo_azul">Laboratorio 1</h1></header>
+    </head>
+
+    <BODy>     
+        <!--Preguntas - HTML-->
+        <ul>
+                <li id="pregunta">¿Cuál es la diferencia entre Internet y la World Wide Web?</li>
+                <body>
+                    <br>
+                   El internet es la red de computadoras conectadas que utilizas para acceder a la world
+                   wide web. La web son las paginas que ves gracias al Internet.
+                    <br><br>
+                <li id="pregunta">¿Cuáles son las partes de un URL?</li>
+                    <br>
+                    Esquema: le dice al servidor web cual protocolo usar al acceder a la pagina.
+                    <br>
+                    Ej: http:://
+                    <br><br>
+                    Sub-dominio: indica a que pagina particular de tu sitio el navegador debe mostrar.
+                    <br>
+                    Ej:  http:://blog.xxxxxxxx.xxx
+                    <br><br>
+                    Dominio de segundo nivel: se trata del nombre de tu sitio, identifica la pagina visitada
+                    <br>
+                    Ej: http:://blog.emmanuel.xxx
+                    <br><br>
+                    Dominio de alto nivel: indica a que tipo de entidad se identifica tu organizacion en internet. 
+                    <br>
+                    Ej: http:://blog.emmanuel.com
+                    <br><br>
+                    Subdirectorio: ayuda a entender en que seccion te encuentras del sitio.
+                    <br>
+                    Ej: http:://blog.emmanuel.com/ventas
+                    <br><br>
+
+                <li id="pregunta">¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</li>
+                    <br>
+                    GET: se utiliza para recuperar datos.
+                    <br>
+                    HEAD: igual a una peticion GET, pero sin el cuerpo de respuesta.
+                    <br>
+                    POST: envia una entidad a un recurso especifico. 
+                    <br>
+                    PUT: reemplaza las representaciones actuales con la carga de la peticion.
+                    <br>
+                    <br>
+                    PATCH: realiza un cambio la localicación de un recurso. 
+                    <br>
+                    DELETE: borra un recurso. 
+                    <br><br>
+                              
+                <li id="pregunta">¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</li>
+                    <br>
+                    Utilizaria el metodo POST, para mantener la seguridad del usuario. 
+                    <br><br>
+                <li id="pregunta">¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</li>
+                    <br>
+                    Utiliza el metodo GET.
+                    <br><br>
+                <li id="pregunta">Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error? </li>
+                    <br>
+                    Significa que la peticion se ha realizado con exito. 
+                    <br><br>
+
+                
+                <li id="pregunta">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</li>
+                    <br>
+
+                    No. Si existe un eror 404, significa que el servidor no encontro el sitio pedido. Esto puede significar que 
+                    la pagina ha sido borrada, o que el url es incorrecto, o que el sitio se movió. Pero todos estos
+                    errores son de parte del cliente.
+                    <br><br>
+
+                <li id="pregunta">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</li>
+                    <br>
+                    Si. El error esta en la parte del servidor, por lo que debe resolverse de manera interna. 
+                    <br><br>
+
+                <li id="pregunta">¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</li>
+                    <br>
+                        Significa que no puede ser utilizado en el codigo. Ej:hr,div,h1,h2,colgroup,tbody
+                    <br><br>
+                <li id="pregunta">¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</li>
+                    <br>    
+                        -HTML 5 soporta diferentes vectores graficos <br>
+                        -Bases de datos SQL se usan para guardar informacion temporal en HTML5 <br>
+                        -En HTML5, se puede correr JavaScript dentro del navegador web.
+                        -HTML5 es mas simple. 
+                    <br><br>
+                <li id="pregunta">¿Qué componentes de estructura y estilo tiene una tabla?</li>
+                    <br>
+                    Tiene un titulo, grupos de filas, grupos de columnas. <br>
+                    Cada fila consiste de una o mas celdas. <br>
+                    Cada celda contiene informacion. <br><br>
+
+                <li id="pregunta">¿Cuáles son los principales controles de una forma HTML5?</li>
+                    <br>
+                    Datalist, output,keygen, progress y meter, 
+                    <br><br>
+                <li id="pregunta">¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</li>
+                    <br>
+                    Utilizo google chrome y tiene 476 de 555 puntos. <br><br>
+                    <br><br>
+                <li id="pregunta">Sobre el ciclo de vida y desarrollo de los sistemas de información: </li>
+                    <br><br>
+                    ¿Cuál es el ciclo de vida de los sistemas de información?<br><br>
+                    Analisis, diseño, implementacion, prueba, evaluacion. <br><br>
+                    ¿Cuál es el ciclo de desarrollo de sistemas de información?<br><br>
+                    Planeación, crear, desarrollar, prueba e implementacion. <br><br>
+
+                
+                </body>
+
+        </ul>
+
+
+         <!--Preguntas - CSS-->
+      
+        <h1 class="fondo_azul">Lab03</h1>
+        <ul>
+            <li id="pregunta">Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </li>
+            <br>
+            Utilizarlo solo cuando sea necesario, por ejemplo, que solo arreglas el problema que tienes con eso. O cuando sabes perfectamnte
+            que es lo que haces y que no afectará nada mas. 
+            <br><br>
+            <li id="pregunta">Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</li>
+            <br>
+            Por la resolucion de la imagen, y por consecuente, las pantallas en donde se estara viendo. Por la accesibilidad al usuario, se deben
+            considerar si es facil de leer el contenido. 
+            <br><br>
+            <li id="pregunta">Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?</li>
+            <br>
+            Creo que cada una tiene su lugar para utilizarse excepto px. Quizas solo para imagenes o bordes. 
+            En cuanto a % y pt, yo usaria el porcentage para pocisionar algo relativo a otro elemento o la pantalla, y 
+            pt para algo estatico y texto.
+            <br><br>
+            <li id="pregunta">¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</li>
+            <br>
+            Porque con su menor tamaño, es mas facil de cargar el diseño cuando se manda a traves de internet. 
+            
+        </ul>
+
+        <h1 class="fondo_azul">Lab05</h1>
+       <ul>
+           <li>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</li>
+           <br>
+           <strong>Similitudes:</strong> 
+                <ul>
+                    <li>Son lenguajes orientados a objetos </li>
+                    <li>Utilzan estructuras de control</li>
+                    <li>Syntaxis parecida</li>
+                </ul>  
+           <br>
+           <strong>Diferencias:</strong>
+                <ul>
+                    <li>Java es un lengauje de programacion orientada a objetos.</li>
+                    <li>JavaScript es un lenguaje de scripting basado en objetos. </li>
+                    <li>Java es un lenguaje <i>estatico</i>, mientras que JavaScript es <i>dinamico</i>.</li>
+                    <li>Java utiliza una jerarquia de arriba hacia abajo por medio de clases.</li>
+
+                </ul>
+            <br>
+            <li>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</li>
+            <br>
+                <ul>
+                    <li><strong> getDate():</strong> Regresa el dia del mes.</li>
+                    <li><strong>getDay(): </strong>Regresa el dia de la semana.</li>
+                    <li><strong>getFullYear():</strong> Regresa el año.</li>
+                    <li><strong>getHours():</strong> Regresa la hora.</li>
+                    <li><strong>getMinutes(): </strong>Regresa los minutos.</li>
+                    <li><strong>now():</strong> Regresa el numero de milisegundos desde el 01/01/1970.</li>
+                </ul>
+            <li>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</li>
+            <br>
+                <ul>
+                    <li><strong>Concat():</strong>Une dos o mas arreglos</li>
+                    <li><strong>Fill():</strong>Llena el elemento de un arreglo con un valor estatico</li>
+                    <li><strong>Find():</strong>Regresa el valor del primer elemento que pase una prueba</li>
+                    <li><strong>From():</strong>Crea un arreglo de un objeto</li>
+                    <li><strong>Pop():</strong>Elimina el ultimo elemento de un arreglo y regresa ese elemento</li>
+                </ul>
+            <br>
+            <li>¿Cómo se declara una variable con alcance local dentro de una función?</li>
+            <br>
+                Utilizando var
+            <br>
+            <li>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</li>
+            <br>
+                Si se cambia el valor de esa variable, va a cambiar dentro de cualquier otro lado donde se encuentre.
+            <br>
+            <li>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</li>
+            <br>
+                Test() o Search(). Se puede usar para comparar strings como un usuario o contraseña.
+       </ul>
+        <br><br>
+
+
+
+
+        <script src="JS/prueba.js"></script>
+
+        <footer class="fondo_azul">
+            Emmanuel Bautista Palacios
+            <br>
+            A01705220
+            <br>
+            <section ><a target="_blank" href="https://github.com/EmBP19/A01705220_DAW"> Repositorio de laboratorios</a></section>
+        </footer>
+
+    </BODy>
+
+    
+
+    
+
+</html>
