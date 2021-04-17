@@ -1,16 +1,19 @@
 {
-  "name": "node",
+  "name": "laboratorios",
   "version": "1.0.0",
-  "description": "Prueba en clase ",
+  "description": "Laboratorios de DAW-BD",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EmBP19/A01705220_DAW"
-
+    "url": "git+https://github.com/EmBP19/A01705220_DAW.git"
   },
-  "author": "EmmanuelBP",
-  "license": "MIT"
+  "author": "Emmanuel B Palacios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmBP19/A01705220_DAW/issues"
+  },
+  "homepage": "https://github.com/EmBP19/A01705220_DAW#readme"
 }
