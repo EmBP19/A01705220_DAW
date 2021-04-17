@@ -5,6 +5,7 @@ console.log("Nodemon es un loquillo");
 //Para usar express
 const express = require('express');
 const app = express();
+const router = express.Router();
 
 //Para usar body-parser
 const bodyParser = require('body-parser');
@@ -19,26 +20,22 @@ app.use(
     next(); //Le permite a la petición avanzar hacia el siguiente middleware
 });
 
-app.use('/nueva-mascota',( request,response,text) => {
 
-    response.send('<form action = "/guardar" method= "POST"><input type = "text" name = "nombre"><input type = "submit" name = "enviar" value = "adoptar"></form>')
-
-});
-app.use('/guardar',( request,response,text) => {
-
-    console.log(request.body);
-    response.send('Gracias por adoptar a ' + request.body.nombre + '!');
-
-});
 
 app.use('/ruta', (request, response, next) => {
     response.send('Respuesta de la ruta "/ruta"'); 
 });
 
+//Para que ponga la raiz o home
+app.get('/', (request, response, next) => {
+    response.send('Bienvenido al mejor lugar para mascotas'); 
+});
 
+// Para mandar un 404
 app.use((request, response, next) => {
-    console.log('Otro middleware!');
-    response.send('¡Hola mundo!'); //Manda la respuesta
+    console.log('Error 404');
+    response.status(404);
+    response.send('Lo sentimos, hay muchas mascotas perdidas como tu en este sitio'); //Manda la respuesta
 });
 
 
