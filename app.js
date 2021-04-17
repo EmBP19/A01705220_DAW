@@ -7,6 +7,10 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 
+//Para ordenar el modulo y que acceda al archivo mascotas.js
+const rutasMascotas = require('./routes/mascotas');
+
+
 //Para usar body-parser
 const bodyParser = require('body-parser');
 const { response } = require('express');
@@ -20,6 +24,7 @@ app.use(
     next(); //Le permite a la petición avanzar hacia el siguiente middleware
 });
 
+app.use('/mascotas', rutasMascotas);
 
 
 app.use('/ruta', (request, response, next) => {
