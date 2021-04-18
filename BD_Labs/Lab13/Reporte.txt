@@ -1,0 +1,44 @@
+Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. ¿Cuál es? ¿A qué se debe?
+R: se hizo un nuevo registro como: es 1000, 'xxx', 1000
+
+Agrega nuevamente el registro a la tabla de materiales:
+¿Qué ocurrió?
+R: Se agregó un nuevo registro 
+
+¿Qué información muestra esta consulta?
+Llaves primarias de las tablas
+
+¿Qué sentencias utilizaste para definir las llaves primarias?
+R: ALTER TABLE Materiales add constraint llaveMateriales PRIMARY KEY (Clave) y asi para RFC, Numero, etc
+
+
+¿Qué particularidad observas en los valores para clave, rfc y numero?
+¿Cómo responde el sistema a la inserción de este registro?
+R: los acomoda diferente
+
+¿Qué significa el mensaje que emite el sistema?
+R:que el constraint "cantidad" tiene un conflicto
+¿Qué significado tiene la sentencia anterior?
+R:  no permite que ejecutes cosas si tiene constraints.
+
+¿Qué uso se le está dando a GETDATE()?
+Da la fecha y hora del registro
+¿Tiene sentido el valor del campo de cantidad?
+R: No,no agregamos nada
+
+¿Cómo responde el sistema?
+¿Qué significa el mensaje?
+R: marca error
+
+
+Integridad referencial:
+
+Sistema de reglas que utilizan la mayoría de las bases de datos relacionales para asegurarse que los registros de tablas relacionadas son válidos y que no se borren o cambien datos relacionados de forma accidental produciendo errores de integridad.
+Limitación que se aplica a una base de datos relacional, en la que los datos y las relaciones entre ellos están organizados en tablas de filas y columnas, para que no se introduzcan datos inconsistentes. 
+
+Fuentes:
+
+   Dunning, D. (s. f.). ¿Qué es la integridad referencial y cómo puede evitar estos problemas un programador? Techlandia. Recuperado 24 de septiembre de 2020, de https://techlandia.com/integridad-referencial-evitar-estos-problemas-programador-info_262424/
+
+   Conceptos Integridad referencial. (s. f.). aulaclic. https://www.aulaclic.es/sql/b_8_1_1.htm
+  
