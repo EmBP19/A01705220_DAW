@@ -1,0 +1,44 @@
+<script>  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+</script>
+
+
+<div class="container">
+    <div class="row">
+<ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">receipt</i>Lab14</div>
+      <div class="collapsible-body"><span>Generar desde el back-end, interfaces dinámicas HTML5 para el cliente por medio de un motor de templates y que incorporen partials.</span>
+       <p><i> ¿Qué otros templating engines existen para node?</i></p>
+       <div class="row"></div>
+       <p>Hay muchos diferentes templating engines que funcionan con express como: </p>
+       <ul>
+           <li><a href="https://github.com/pugjs/pug"> Pug (solia ser Jade)</a></li>
+           <li><a href="https://github.com/reactjs/express-react-views"> React</a></li>
+           <li><a href="https://github.com/bminer/node-blade"> Blade</a></li>
+            <li><a href="https://www.npmjs.com/package/twing">Twing</a></li>
+       </ul>
+       <p>Entre otros.</p>
+    </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">verified_user</i>Log in</div>
+      <div class="collapsible-body"><span>Autentificacion de usuario. El nombre de usuario y password se guardan en el archivo "login.txt"</span>
+        <a href="/login">Login</a>
+    </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul> 
+    </div>
+</div>

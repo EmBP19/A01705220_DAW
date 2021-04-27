@@ -1,0 +1,28 @@
+   
+     <div class="container z-depth-5">
+        <section class="tabcontent" id="Password">
+            <h2 class="titulo_sec center">Crea una cuenta</h2>
+            <div class="container">
+                <form action="RegPssw" method="POST" accept-charset="UTF-8">
+                    <label for="username" class="flow-text">Nombre de usuario</label><br>
+                    <input type="text" name="username" id="username" value="">
+
+                    <label for="password" class="flow-text">Password</label><br>
+                    <input type="password" name="password" id="password" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
+                    minlength="8" title="Una contraseña válida es un conjuto de caracteres, donde cada uno consiste de 
+                    una letra mayúscula o minúscula, o un dígito. La contraseña debe empezar con una letra y contener al 
+                    menos un dígito y tener una longitud de 9 caracteres." onkeyup="passwordVal()"><br><br>
+
+                    <label for="passworcheck" class="flow-text">Confirma tu password</label><br>
+                    <input type="password" name="passworcheck" id="passworcheck" value="" onkeyup="passwordVal()">
+                    <p id="MessagePasword" class="flow-text"></p>
+                    <div class="container center">
+                    <button class="btn waves-effect  blue-grey darken-2 btn-large pulse" type="submit" name="action">Enviar</button>
+                    </div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+                </form>
+            </div>
+            <br><br><br> <br>
+        </section>
