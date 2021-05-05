@@ -1,0 +1,50 @@
+<div class="container">
+
+    <h1>Registrar incidente</h1>  
+   
+      
+    <form action="nuevo_registro" method="POST">
+      
+        <div class="row">
+            <div class="col l5 m6 s12">
+                
+                <div class="input-field">
+                    <select name="id_incidente">
+                      <option value="" disabled selected>Escoge una Opción</option>
+                      <option value="1">Falla Eléctrica</option>
+                      <option value="2">Fuga Herbívoro</option>
+                      <option value="3">Fuga de Velociraptors</option>
+                      <option value="4">Fuga de TRex</option>
+                      <option value="5">Robo de ADN</option>
+                      <option value="6">Auto Descompuesto</option>
+                      <option value="7">Visitantes en Zona Prohibida</option>
+                    </select>
+                    <label>Incidente</label>
+                  </div>
+            </div>
+            <div class="col l5 m6 s12">
+                
+                
+
+                <div class="input-field">
+                    <select name="id_lugar">
+                      <option value="" disabled selected>Escoge una Opción</option>
+                      <option value="1">Centro Turístico</option>
+                      <option value="2">Laboratorios</option>
+                      <option value="3">Restaurante</option>
+                      <option value="4">Centro Operativo</option>
+                      <option value="5">Triceratops</option>
+                      <option value="6">Dilofosaurios</option>
+                      <option value="7">Velociraptors</option>
+                      <option value="8">TRex</option>
+                      <option value="9">Planicie de los Hervíboros</option>
+                    </select>
+                    <label>Lugar</label>
+                  </div>
+            </div>  
+            
+            
+            <input class="large btn" type="submit" name="enviar" value="REGISTRAR">
+        </div>
+    </form>
+</div>

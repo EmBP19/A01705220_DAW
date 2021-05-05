@@ -1,0 +1,36 @@
+<div class="container center">
+    <h3>Incidentes</h3>
+      <table id="historial" class="display " style="width:100%" >
+        <thead>
+          <tr> 
+            <th>ID Incidente</th>
+            <th>Incidente</th>
+            <th>Lugar</th>
+            <th>Fecha</th>
+            
+           
+            
+          </tr>
+        </thead>
+        <tbody>
+          <%  for(let incidente of incidentes ){  %>
+          <tr>
+            <td><%= incidente.id_incidente %></td>
+            <td><%= incidente.tipo_incidente %></td>
+            <td><%= incidente.nombre_lugar %></td>
+            <td><%= incidente.fecha %></td>
+            
+            
+          </tr>
+  
+        
+          
+          <% } %>
+          
+        </tbody>
+    
+    </table> 
+    
+      
+    
+    </div>

@@ -1,0 +1,24 @@
+{
+  "name": "examen-daw",
+  "version": "1.0.0",
+  "description": "Prueba de examen ",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EmBP19"
+  },
+  "author": "EmBP",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7"
+  }
+}
