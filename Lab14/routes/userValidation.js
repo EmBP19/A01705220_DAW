@@ -9,9 +9,6 @@ router.use(bodyParser.urlencoded({extended: false}));
 
 const fs = require('fs');
 
-const usuarios = [
-    {nombreUsuario: 'Admin', contrasena: '1234'}, 
-    {nombreUsuario: 'User', contrasena: 'noLeasEsto'}];
 
 //Enviar archivos estáticos en carpeta public
 router.use(express.static(path.join(__dirname,'..', 'public')));
@@ -24,7 +21,7 @@ router.get('/Registrar', (request, response, next) => {
         act3: "",
         act4: "",
     });
-    console.log("Reg Pssw");
+    console.log("Registrar");
     response.status(200);
 });
 
@@ -40,13 +37,13 @@ router.post('/Registrar', (request, response, next) => {
 
 router.get('/Validar', (request, response, next) => {
     response.render('Validar', {
-        titulo: "Lab14-login-GAGM-DAW & BD",
+        titulo: "Lab14",
         act1: "",
         act2: "active",
         act3: "",
         act4: "",
     });
-    console.log("Valida Pssw");
+    console.log("Validar");
     response.status(200);    
 });
 

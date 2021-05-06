@@ -9,9 +9,6 @@ router.use(bodyParser.urlencoded({extended: false}));
 
 const fs = require('fs');
 
-const usuarios = [
-    {nombreUsuario: 'Admin', contrasena: '1234'}, 
-    {nombreUsuario: 'User', contrasena: 'noLeasEsto'}];
 
 //Enviar archivos estáticos en carpeta public
 router.use(express.static(path.join(__dirname,'..', 'public')));
@@ -24,7 +21,7 @@ router.get('/Registrar', (request, response, next) => {
         act3: "",
         act4: "",
     });
-    console.log("Reg Pssw");
+    console.log("Registar");
     response.status(200);
 });
 
