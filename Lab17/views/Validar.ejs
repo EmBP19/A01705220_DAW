@@ -1,0 +1,26 @@
+
+
+<%- include('includes/navbar.ejs') %>
+
+        <!-- Registra password valido -->
+        <div class="container  z-depth-5">
+        <section class="tabcontent" id="Password">
+            <h2 class="titulo_sec center">Login</h2>
+            <div class="container">
+                <form action="Validar" method="POST" accept-charset="UTF-8">
+                    <label for="username" class="flow-text">Nombre de usuario</label><br>
+                    <input type="text" name="username" id="username" value="">
+
+                    <label for="pass" class="flow-text">Password</label><br>
+                    <input type="password" name="pass" id="pass" value="">
+                    <div class="container center">
+                    <button class="btn waves-effect waves-light btn-large pulse center" type="submit" name="action">Enviar</button>
+                    </div>
+                </form>
+            <div class="row"></div>
+            </div>
+            
+        </section>
+    </div>
+
+<%- include('includes/footer.ejs') %>
